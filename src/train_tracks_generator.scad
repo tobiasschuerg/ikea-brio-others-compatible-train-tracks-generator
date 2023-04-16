@@ -92,17 +92,17 @@ switch_cut_ext = 1;
 // ### For example: track_plug_radius = 6.45;
 
 // Track Plug - choose your system here or define your own values
-track_plug_radius = ikea_track_plug_radius;
-track_plug_radius_ext = ikea_track_plug_radius_ext;
-track_plug_neck_width = ikea_track_plug_neck_width;
-track_plug_neck_length = ikea_track_plug_neck_length;
-track_plug_txt = ikea_track_plug_txt;
+track_plug_radius = 5.8;
+track_plug_radius_ext = brio_track_plug_radius_ext;
+track_plug_neck_width = brio_track_plug_neck_width;
+track_plug_neck_length = brio_track_plug_neck_length;
+track_plug_txt = brio_track_plug_txt;
 
 // Track Nest  - choose your system here or define your own values
-track_nest_radius = ikea_track_nest_radius;
-track_nest_neck_width = ikea_track_nest_neck_width;
-track_nest_neck_length = ikea_track_nest_neck_length;
-track_nest_txt = ikea_track_nest_txt;
+track_nest_radius = brio_track_nest_radius;
+track_nest_neck_width = brio_track_nest_neck_width;
+track_nest_neck_length = brio_track_nest_neck_length;
+track_nest_txt = brio_track_nest_txt;
 
 
 // ### TESTING / GENERATION AREA / EXAMPLES
@@ -115,7 +115,7 @@ track_nest_txt = ikea_track_nest_txt;
 
 // ---------------------------------
 //TRACK TESTER
-track_tester();
+// track_tester();
 
 // ---------------------------------
 // TRACKS ADAPTER
@@ -124,12 +124,13 @@ track_tester();
 
 // ---------------------------------
 // STRAIGHT track examples
-/*
+
 track(length = 100,
       end1 = "plug",
       end2 = "nest",
+      both_sides = false,
       cutout = true);
-*/
+
 
 /*
 track(length = 25,
@@ -321,12 +322,15 @@ snake_track(angle = 70,
 // If a model does not look good in the preview window, render it using F6
 
 /*
-switch(angleR = 45, radiusR = 86, endR = "nest",
+switch(angleR = 45, radiusR = 160, endR = "plug",
        angleL = 0, radiusL = 0, endL = "nest",
-       lengthS = 100, endS = "nest",
-       endCommon = "plug",
+       lengthS = 150, endS = "plug",
+       endCommon = "nest",
        both_sides = true);
-*/
+*/     
+      
+           
+
 
 /*
 switch(angleR = 45, radiusR = 86, endR = "nest",
